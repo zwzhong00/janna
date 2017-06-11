@@ -1,0 +1,114 @@
+html {
+	overflow: hidden;
+}
+
+a{
+	text-decoration: none;
+	overflow: hidden;
+}
+
+ul,li {
+	list-style: none;
+}
+* li{
+	display:inline;
+}
+li {
+	display: list-item;
+	verticle-align: middle;
+}
+
+img {
+	width: 40px;
+	height: 40px;
+	border-radius: 3px;
+}
+
+iframe {
+	width: 100%;
+	height: 100%;
+	border: 0;
+	border-style: none;
+}
+
+.browsehappy {
+	position: relative;
+	display: block;
+    top: 0;
+    height: 34px;
+    color: #333;
+    background: #FFF0B9;
+    text-align: center;
+    line-height: 34px;
+	z-index: 1;
+}
+
+.browsehappy a {
+    color: #ff0000;
+}
+
+.wrap {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.main--left {
+	position: absolute;
+	float: left;
+	width: 312px;
+	height: 100%;
+	background: #FAFBFC;
+	overflow-y:auto;
+}
+.main--right {
+	position: absolute;
+	margin-left: 312px;
+	height: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.is-active {
+	background-color: #E1F1FF;
+}
+.nav__box {
+	height: 100%;
+	border-right: 1px solid #F2F2F2;
+}
+.nav__item {
+	position: relative;
+	height: 64px;
+	padding: 0;
+	margin: 0;
+}
+.nav__item:hover {
+	background-color: #E1F1FF;
+}
+.nav__item .icon {
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin: 12px 11px 12px 18px;
+	border-radius: 3px;
+}
+.nav__item .content {
+	float: left;
+	width: 155px;
+	height: 17px;
+	margin: 23px 0;
+	line-height: 17px;
+	overflow: hidden;
+	cursor: default;
+}
+
+.nav__item .time {
+	position: absolute;
+	right: 13px;
+	color: #666;
+	line-height: 17px;
+	margin: 23.5px 0;
+	cursor: default;
+}

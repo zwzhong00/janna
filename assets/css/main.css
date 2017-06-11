@@ -1,0 +1,151 @@
+﻿/* reset.css */
+html {margin:0;padding:0;border:0;}
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure, dialog, footer, header, hgroup, menu, nav, section {display:block;}
+ul,ol,li{list-style: none}
+table {border-collapse:separate;border-spacing:0;}
+caption, th, td {text-align:left;font-weight:normal;float:none !important;}
+table, th, td {vertical-align:middle;}
+blockquote:before, blockquote:after, q:before, q:after {content:'';}
+blockquote, q {quotes:"" "";}
+span,img,a{vertical-align: middle;}
+a{color:#3C3C3C;border:none;outline:none;text-decoration: none;}
+a img {border:none;outline:none;}
+a:focus,li:focus,div:focus{outline:0; outline:none;}
+
+/* typography.css */
+body {color:#666; text-align:center;color:#444;background: #FAFBFC;margin:0;padding:0}
+body, pre {font:12px/1.3 "微软雅黑","黑体",Arial,Tahoma;}
+h1, h2, h3, h4, h5, h6 {font-weight:normal;color:#3C3C3C;font-weight: bold}
+h1 {font-size:2em;line-height:1;margin-bottom:0.5em;}
+h2 {font-size:1.6em;margin-bottom:0.75em;}
+h3 {font-size:1.4em;line-height:1;margin-bottom:0.8em;}
+h4 {font-size:1.2em;line-height:1.25;margin-bottom:.25em;}
+h5 {font-size:1em;font-weight:bold;margin-bottom:1.5em;}
+h6 {font-size:1em;font-weight:bold;}
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin:0;}
+p {line-height: 1.5em}
+strong, dfn {font-weight:bold;}
+
+/**main**/
+.left {float: left;}
+.right {float: right;}
+.clear {clear: both;}
+.clr {clear: both;height: 1px;overflow: hidden;display: block;}
+.chatContent{ width: 100%; display: inline-block;}
+.chatItem{padding: 4px 0px 10px 0px;}
+
+
+    .chatItem .time .timeText{text-align: center;color: #FAFBFC;padding: 3px 22px;}
+    .chatItem .avatar {width: 38px;height: 38px;border: 1px solid #ccc;border: 1px solid #FFF;}
+    .chatItem .nickName {font-size: 12px;padding-bottom: 3px;color: #4f4f4f; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-wrap: normal;}
+    .chatItem .cloud {padding: 0px;margin: 0px;cursor: default;position: relative;}
+        .cloudPannel {position: relative;_position: static; text-align: left;}
+            .chatItem .cloudContent {text-align: left;font-weight: normal;font-size: 14px;word-wrap: break-word;}
+.cloudText .sendStatus {margin-top: -8px;}
+
+    .cloudText .sendStatus .copy, .cloudImg .sendStatus .downImage, .cloudVoice .sendStatus .exportVoice, .cloudText .relationMsg{line-height: 15px;margin-left: 10px;cursor: pointer;}
+    .cloudVoice .sendStatus .second{line-height: 15px;}
+        .cloudText .sendStatus .copy .bg, .cloudImg .sendStatus .downImage .bg, .cloudVoice .sendStatus .exportVoice .bg{float: left;}
+        .cloudText .sendStatus .copy .text, .cloudImg .sendStatus .downImage .text, .cloudVoice .sendStatus .exportVoice .text{float: left;color: #9FA2A4;}
+    .cloudText .relationMsg{color: #4EC1F9;text-decoration: underline;}
+    .cloudImg .sendStatus .downImage {margin-right: 10px;}
+        .cloudText .sendStatus .copy .bg{background-position: -5px -4px;}
+        .cloudImg .sendStatus .downImage .bg, .cloudVoice .sendStatus .exportVoice .bg{background-position: -30px -4px;}
+.me{float: right;width: 100%;overflow: hidden;}
+    .me .avatar {float: right;margin-right: 20px;margin-left: 10px}
+    .me .cloud {float: right;min-width: 50px;max-width: 300px;margin: 0 15px 0 0;text-align: right;}
+    .me .time{text-align: right;padding: 2px 0 6px 0;}
+        .me .sendStatus {position: absolute;left: -250px;color: #B8B8B8;bottom: -1px;_bottom:-3px;width: 250px;text-align: right;font-size: 12px;}
+            .me .cloudText .sendStatus .copy, .me .cloudImg .sendStatus .downImage, .cloudVoice .sendStatus .exportVoice{float: right;}
+        .me .cloudText .cloudBody {position: relative;-moz-border-top-colors: none;-moz-border-right-colors: none;-moz-border-bottom-colors: none;-moz-border-left-colors: none;border-color: transparent;border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;box-shadow: 0px 1px 0px #D5D5D5;border: 1px solid #7FC9F1;background: #A2D8F5;}
+            .me .cloudText .cloudContent {vertical-align: top;padding: 8px 10px;}
+
+            .zoomIn {border-radius: 1px;}
+            .me .cloudImg .cloudContent{padding: 8px 10px;*margin-right: -5px;}
+            .me .cloudImg .cloudBody, .me .cloudVideo .cloudBody {border-width: 8px 8px 9px;-moz-border-image: url("../images/cloud_img_body_white.png") 8 8 9 8 stretch;-webkit-border-image: url("../images/cloud/cloud_img_body_white.png") 8 8 9 8 stretch;-o-border-image: url("../images/cloud/cloud_img_body_white.png") 8 8 9 8 stretch;border-image: url("../images/cloud/cloud_img_body_white.png") 8 8 9 8 stretch;border: 1px solid #7FC9F1;border-style: solid;background: #A2D8F5;border-radius: 3px;}
+            .cloudImg .cloudContent img {min-width: 50px;min-height: 50px;}
+                .me .cloudVideo .imageBorder {border: 1px solid #a4a4a4;}
+                .me .cloudImg .imageBorder {*border-right:0;border-radius: 0px;width: 100px;}
+        .me .cloudVoice {margin-right: 15px;}
+            .me .cloudVoice .cloudBody {position: relative;margin: 0 0 0 7px;background: url("../images/cloud_voide_body_white.png") 0 0 repeat-x;background: #A2D8F5;border: 1px solid #7FC9F1;border-radius: 3px;-webkit-border-radius: 3px;-moz-border-radius: 3px;}
+                .me .cloudVoice .cloudContent {display: block;padding: 0;text-align: right;}
+                    .me .cloudVoice .icoVoice {display: inline-block;padding: 5px 10px; cursor: pointer;}
+                        .me .cloudVoice .icoVoice span {display: block;width: 13px;height: 20px;}
+                        .me .cloudVoice .stop span{background: url("../images/icons.png") no-repeat;*_background: url("../images/icons.gif") no-repeat;background-position: 0px -30px;}
+                        .me .cloudVoice .play span{background: url("../images/voice_me_animate.gif") no-repeat;background-size: 13px 20px;
+                        }
+            .me .cloudVoice .sendStatus .second{float: right;margin-left: 5px;}
+
+          .me .cloudArrow {position: absolute;right: -12px;top: 11px;width: 13px;height: 20px;background: url("../images/icons.png") no-repeat;*_background: url("../images/icons.gif");background-position: 0px -116px;}
+
+.you {float: left;width: 100%;_background: none;_border: none;overflow: hidden;}
+    .you .avatar {float: left;margin:0 23px 0 20px;}
+    .you .time{text-align: left;padding: 2px 0 6px 0;}
+        .you .cloud {float: left;min-width: 50px;margin: 0; text-align: left;}
+            .you .sendStatus {position: absolute;bottom: -1px;_bottom:-3px;right: -198px;width: 200px;text-align: left;font-size: 12px;color: #B8B8B8;background: none;}
+                .you .cloudText .sendStatus .copy, .you .cloudImg .sendStatus .downImage, .you .cloudVoice .sendStatus .exportVoice, .you .cloudVoice .sendStatus .second{float: left;}
+            .you .cloudText .cloudBody {-moz-border-top-colors: none;-moz-border-right-colors: none;-moz-border-bottom-colors: none;-moz-border-left-colors: none;border-color: transparent;border: 1px solid #DDDDDE;border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;background-color: #F4F5F7;overflow: hidden;}
+                .you .cloudText .cloudContent {padding: 8px 10px;text-shadow: none;color: #030303;overflow: hidden;}
+                .you .cloudVoice {}
+                    .you .cloudVoice .cloudBody {position: relative;margin: 0px 8px 0px 0px;border: 1px solid #DDDDDE;border: 1px solid #DDDDDE;border-radius: 3px;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;background-color: #F4F5F7;}
+                        .you .cloudVoice .cloudContent .icoVoice{display: inline-block;padding: 5px 10px;cursor: pointer;}
+                            .you .cloudVoice .cloudContent .icoVoice span{display: block;width: 13px;height: 20px;}
+                        .you .cloudVoice .stop span{background: url("../images/icons.png") no-repeat;*_background: url("../images/icons.gif") no-repeat;background-position: 0px 0px;}
+                        .you .cloudVoice .play span{background: url("../images/voice_you_animate.gif") no-repeat;}
+                        .you .cloudArrow {position: absolute;left: -12px;top: 11px;width: 13px;height: 20px;background: url("../images/icons.png") no-repeat;*_background: url("../images/icons.gif") no-repeat;background-position: 0px -136px;}
+                        .you .cloudImg .cloudBody {-moz-border-top-colors: none;-moz-border-right-colors: none;-moz-border-bottom-colors: none;-moz-border-left-colors: none;border-color: transparent;border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;background-color: #F4F5F7;border: 1px solid #DDDDDE;border-radius: 3px;}
+                            .you .cloudImg .cloudContent{border-radius: 6px;padding:8px 10px;*margin-right:-5px;border-radius: 13px;border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;text-shadow: none;color: #030303;}
+                                .you .cloudImg .cloudContent img {width: 100px;}
+
+.chatItem .media {border: 1px solid #cccccc;padding:10px;box-shadow: 0px 1px 1px #D7D7D7;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;width: 350px;background-color: #FAFAFA; margin: 0px auto;}
+.chatItem .time{position: relative;height:0;border-bottom:1px solid #E5E5E5; margin:10px 20px 20px 20px;text-align: center;}
+
+.chatItem .time .timeText{padding:0 10px;color:#666666;background: #FAFBFC;position:relative;letter-spacing:1px;_top:16px;margin-left: -15px;*margin-left: -15px}
+.bookAndSys .time{text-align: center;}
+
+    .chatItem .media .mediaPanel {padding: 0px;margin: 0px;}
+        .chatItem .media a {display: block;}
+        .chatItem .media .mediaImg {height: 195px;overflow: hidden;}
+            .chatItem .media .mediaImg .referer{margin: -8px;*margin: -10px;}
+            .chatItem .media .mediaImg .mediaImgPanel {position: relative;padding: 0px;margin: 0px;height: 195px;width: 100%;overflow: hidden;}
+            .chatItem .media .mediaImg .mesgTitleTitle{}
+                .chatItem .media .mediaImg img {position: absolute;left: 0px;visibility: inherit;
+                    width: 100%;height:195px;top: -9.25px;}
+            .chatItem .media .mediaImg .mediaImgFooter {position: relative;top: -57px;height: 47px;background-color: #000;filter:alpha(opacity=50);-moz-opacity: 0.5;opacity: 0.5;text-shadow: none;color: #FFF;text-align: left;padding: 0px 11px;line-height: 29px;}
+                .chatItem .media .mediaImg .mediaImgFooter .mesgTitleTitle {line-height: 47px;color: #FFF;max-width: 318px;height: 47px;white-space: nowrap;text-overflow: ellipsis;-o-text-overflow: ellipsis;overflow: hidden;}
+
+                    .chatItem .media .mediaImg .mediaImgFooter .mesgTitleTitle a{color: #fff;display:block;width:320px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+
+
+        .chatItem .media .mediaContent {margin: 0px;padding: 0px;}
+            .chatItem .media .mediaContent .mediaMesg {border-top: 1px solid #D7D7D7;padding: 0px 10px 5px 10px;}
+                .chatItem .media .mediaContent .mediaMesg .mediaMesgDot {display: block;position: relative;top: -3px;left: 20px;height: 1px;margin-bottom: 5px !important;_margin-bottom: -10px;width: 6px;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;}
+                .chatItem .media .mediaContent .mediaMesg .mediaMesgTitle {width:285px;}
+                    .chatItem .media .mediaContent .mediaMesg .mediaMesgTitle p {line-height: 1.5em;max-height: 45px;max-width: 286px;min-width: 176px;margin-top: 2px;color: #5D6265;text-overflow: ellipsis;-o-text-overflow: ellipsis;overflow: hidden;text-align: left;text-overflow: ellipsis;}
+                    .chatItem .media .mediaContent .mediaMesg .mediaMesgTitle p:hover{color: #000;}
+                    .chatItem .media .mediaContent .mediaMesg .mediaMesgIcon img {height: 45px;width: 45px;}
+        .chatItem .media .mediaHead {padding: 0px 8px 4px;border-bottom: 1px solid #D3D8DC;color: #A51000;font-size: 16px;}
+            .chatItem .media .mediaHead .title {line-height: 1.2em;margin-top: 22px;display: block;max-width: 312px;text-align: left;}
+            .chatItem .media .mediaHead .time {margin: 0px;margin-top: 21px;color: #82888C;background: none;width: auto;}
+        .chatItem .mediaFullText .mediaImg {height: 164px;width: 100%;padding: 0px 0px 5px;margin: 0px;margin-top: 17px;overflow: hidden;position: relative;}
+            .chatItem .mediaFullText .mediaImg img {margin-top: 17px;position: absolute;}
+        .chatItem .mediaFullText .mediaContent {padding: 6px 8px 10px;font-size: 12px;line-height: 1.5em;text-align: left;color: #666B6E;}
+        .chatItem .mediaFullText .mediaContentP {padding: 12px 8px 10px;}
+        .chatItem .media .mediaFooter {background-color: #F0F4F8;-webkit-border-radius: 0px 0px 5px 5px;-moz-border-radius: 0px 0px 5px 5px;border-radius: 0px 0px 5px 5px;}
+            .chatItem .media .mediaFooter a {color: #792F2E;font-size: 14px;padding: 0px 7px;height: 39px;display: block;}
+                .chatItem .media .mesgIcon {display: inline-block;height: 13px;width: 13px;margin: 8px 0px -2px 4px;background: url("../images/icons.png") no-repeat;*_background: url("../images/icons.gif") no-repeat;background-position: -5px -28px;}
+                .chatItem .media .mediaFooter .mesgIcon {margin: 12px 3px 0px 0px;}
+                .chatItem .media .mediaFooter .mesgText {line-height: 39px;cursor: pointer;}
+.systemTip {display: block;width: 300px;padding: 8px 10px;border-radius: 4px;margin: 0 auto 10px auto;text-align: center;text-shadow: none;font-size: 12px;color: #111;color: #9FA2A4;background: #E7EAEC;word-wrap: break-word;}
+
+.more a{padding: 10px 10px 10px 15px;display: inline-block;color: #4EC1F9;background: url("../images/more.jpg") no-repeat 0 10px;font-size: 13px;}
+.more a:hover{text-decoration: underline;}
+
+.chatItem .deleted, .chatItem .deleted .cloudBody {border-color: #ff0000;}
+.you .deleted .cloudArrow {background-position: 0px -168px;}
+.me .deleted .cloudArrow {background-position: 0px -153px;}
+.me .deleted .cloudBody {background-color: #d5ecff;}
+.me .deleted .stop span {background-position: 0 -195px;}
+
+/*.voidePlay{height: 0;overflow: hidden;}*/
