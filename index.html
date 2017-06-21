@@ -1,50 +1,58 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta http-equiv="Content-Language" content="zh-cn">
-<title></title>
-<link href="./assets/css/reset.css" rel="stylesheet"/>
-<link href="./assets/css/style.css" rel="stylesheet"/>
-<script type="text/javascript" src="./assets/js/jquery.1.8.3.min.js"></script>
-<script type="text/javascript">
-function changeIframe() {
-var path = $(this).attr('path')
-$(this).addClass('is-active').siblings().removeClass("is-active")
-$('.main--right iframe').attr('src', path)
-}
-$(document).ready(function() {
-if(window.ActiveXObject || "ActiveXObject" in window) {
-document.getElementById('browsehappy').style.display = 'block'
-} else {
-document.getElementById('browsehappy').style.display = 'none'
-}
-$('.nav__item').bind('click',changeIframe)
-});
-</script>
-</head>
-<body>
-<div class="wrap">
-  <p id="browsehappy" class="browsehappy">为了获得更好的浏览体验，推荐您使用最新<a href="http://www.google.cn/chrome/browser/desktop/index.html" target="_blank">Chrome浏览器、</a><a href="http://www.firefox.com.cn/download/" target="_blank">Firefox浏览器、</a>或者<a href="http://ie.sogou.com/" target="_blank">搜狗浏览器</a>打开本聊天记录HTML文件</p>
 
-<div class="main--left" >
-<ul class="nav__box">
-<li class="nav__item" path="content\小安琪.html">
-<div class="icon"><img src="http://wx.qlogo.cn/mmhead/ver_1/fX8dFZ8UtkZd5AYn8zpUKkUJBpYiao6FLtrPGibf8HtAbO34YCIkE7QL9QvceWhmYBGhDETdich1WkcibcfLnKlPibA/132" /></div>
-<div class="content">
-<p>小安琪</p>
-</div>
-<div class="time">
-<p>01:49</p>
-</div>
-</li>
-</ul>
-</div>
-<div class="main--right">
-<iframe src="content\小安琪.html" frameborder="no"></iframe>
-</div>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Language" content="zh-cn">
+		<title></title>
+		<link href="./assets/css/reset.css" rel="stylesheet" />
+		<link href="./assets/css/style.css" rel="stylesheet" />
+		<script type="text/javascript" src="./assets/js/jquery.1.8.3.min.js"></script>
+		<script type="text/javascript">
+			function changeIframe() {
+				var path = $(this).attr('path')
+				$(this).addClass('is-active').siblings().removeClass("is-active")
+				$('.main--right iframe').attr('src', path)
+			}
+			$(document).ready(function() {
+				if(window.ActiveXObject || "ActiveXObject" in window) {
+					document.getElementById('browsehappy').style.display = 'block'
+				} else {
+					document.getElementById('browsehappy').style.display = 'none'
+				}
+				$('.nav__item').bind('click', changeIframe)
+			});
+		</script>
+	</head>
 
-</div>
-</body>
+	<body>
+		<div class="wrap">
+			<p id="browsehappy" class="browsehappy">为了获得更好的浏览体验，推荐您使用最新
+				<a href="http://www.google.cn/chrome/browser/desktop/index.html" target="_blank">Chrome浏览器、</a>
+				<a href="http://www.firefox.com.cn/download/" target="_blank">Firefox浏览器、</a>或者
+				<a href="http://ie.sogou.com/" target="_blank">搜狗浏览器</a>打开本聊天记录HTML文件</p>
+
+			<div class="main--left">
+				<ul class="nav__box">
+					<li class="nav__item" path="content\小安琪.html">
+						<div class="icon"><img src="http://wx.qlogo.cn/mmhead/ver_1/fX8dFZ8UtkZd5AYn8zpUKkUJBpYiao6FLtrPGibf8HtAbO34YCIkE7QL9QvceWhmYBGhDETdich1WkcibcfLnKlPibA/132" /></div>
+						<div class="content">
+							<p>小安琪</p>
+						</div>
+						<div class="time">
+							<p>01:49</p>
+						</div>
+					</li>
+					<li class="nav__item">
+						<embed wmode="transparent" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.swf" quality="high" bgcolor="#ffffff" width="160" height="70" name="honehoneclock" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+					</li>
+				</ul>
+			</div>
+			<div class="main--right">
+				<iframe src="content\小安琪.html" frameborder="no"></iframe>
+			</div>
+
+		</div>
+	</body>
+
 </html>
-
